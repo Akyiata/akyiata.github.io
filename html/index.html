@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Profile Info -->
+    <img src="../images/profile.png" alt="Profile Picture" id="profile-picture" draggable="false" (dragstart)="false;">
+    <h1 id="profile-name">Akyiata <small> » TBG </small></h1>
+	
+    <!-- Social Media Links -->
+    <a target="_blank" href="https://discordapp.com/users/444625196272582686"><img src="../images/discord.svg" alt="discord Logo" class="social-icons"></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCKjL3wo4VkHibPKwCcX_q4w?"><img src="../images/youtube.svg" alt="Youtube Logo" class="social-icons" ></a>
+	<a target="_blank" href="https://github.com/Akyiata"><img src="../images/github.svg" alt="Github Logo" class="social-icons" ></a>
+    <a target="_blank" href="https://osu.ppy.sh/u/11337459"><img src="../images/osu.png" alt="Osu Logo" class="social-icons" ></a>
+    <a target="_blank" href="https://ripple.moe/u/62678"><img src="../images/ripple.svg" alt="Ripple Logo" class="social-icons" ></a>
+    <a target="_blank" href="https://relax.akatsuki.pw/u/9736"><img src="../images/relaxaka.png" alt="AkatsukiRelax Logo" class="social-icons" ></a>
+    <a target="_blank" href="https://listen.moe/"><img src="../images/moe.jpg" alt="Listen Logo" class="social-icons"></a>
+
+    <div class="contain">
+                <H5><a target="_blank" href="https://friendpaste.com/G1RsRSWXN3r4iS15HY0Cs">\\ My Setup |</a><a target="_blank" href="https://friendpaste.com/G1RsRSWXN3r4iS15HuoUE">| My Games //</a></H5>
+            </div>
+
+    <!--Friends-->
+    <div class="footer">
+        <a target="_blank" href="https://osu.ppy.sh/users/6269397"> kiyoshi |</a>
+        <a target="_blank"href="https://osu.ppy.sh/users/10393522">| smoqe </a>
+    </div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/colorchange.js"></script>
+    <!--Anim Title-->
+    <script type="text/javascript">
+        function tb8_makeArray(n){
+            this.length = n;
+            return this.length;
+        }
+        tb8_messages = new tb8_makeArray(1);
+        tb8_messages[0] = "Akyiata | Me";
+        tb8_rptType = 'infinite';
+        tb8_rptNbr = 5;
+        tb8_speed = 100;
+        tb8_delay = 1500;
+        var tb8_counter=1;
+        var tb8_currMsg=0;
+        var tb8_tekst ="";
+        var tb8_i=0;
+        var tb8_TID = null;
+        function tb8_pisi(){
+            tb8_tekst = tb8_tekst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+            document.title = tb8_tekst;
+            tb8_sp=tb8_speed;
+            tb8_i++;
+            if (tb8_i==tb8_messages[tb8_currMsg].length){
+                tb8_currMsg++; tb8_i=0; tb8_tekst="";tb8_sp=tb8_delay;
+            }
+            if (tb8_currMsg == tb8_messages.length){
+                if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
+                    clearTimeout(tb8_TID);
+                    return;
+                }
+                tb8_counter++;
+                tb8_currMsg = 0;
+            }
+            tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+        }
+        tb8_pisi()</script>
+</body>
+</html>

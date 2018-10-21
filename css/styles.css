@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+ }
+#profile-picture {
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    border-radius: 50%;
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+#profile-name {
+    color: #F8F8FF;
+    font-family: Arial;
+    margin: 0;
+    padding: 25px 0;
+}
+.social-icons {
+    width: 2vw;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+.social-icons:hover {
+    transform: scale(1.5);
+}
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+  }
+  .footer,footer:visited {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none; 
+    decoration: none;
+    background-color: black;
+  }

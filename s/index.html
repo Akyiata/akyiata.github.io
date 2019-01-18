@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scroll-left">
+        <p> -->FUCK THE WORLD<-- </p>
+    </div>
+            
+    <!-- Profile Info -->
+    <img src="images/profile.png" alt="Profile Picture" id="profile-picture" draggable="false" (dragstart)="false;">
+    <h1 id="profile-name">Seizorio <small> » TBG </small></h1>
+    <!-- Social Media Links -->
+    <a target="_blank" href="https://discordapp.com/users/444625196272582686">
+        <img src="images/discord.svg" alt="discord Logo" class="social-icons" draggable="false" (dragstart)="false";>
+    </a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCKjL3wo4VkHibPKwCcX_q4w?">
+        <img src="images/youtube.svg" alt="Youtube Logo" class="social-icons" draggable="false" (dragstart)="false";>
+    </a>
+    <a target="_blank" href="https://osu.ppy.sh/u/peppy">
+        <img src="images/osu.png" alt="Osu Logo" class="social-icons" draggable="false" (dragstart)="false";>
+    </a>
+    <a target="_blank" href="https://safe.fiery.me">
+        <img src="images/fiery.png" alt="SafeFiery Logo" class="social-icons"draggable="false" (dragstart)="false";>
+    </a>
+    <a target="_blank" href="https://listen.moe/">
+        <img src="images/moe.jpg" alt="Listen Logo" class="social-icons" draggable="false" (dragstart)="false";>
+    </a>
+    <a target="_blank" href="https://lolibooru.moe/">
+        <img src="images/loli.png" alt="Lolimoe" class="social-icons" draggable="false" (dragstart)="false";>
+    </a>
+    <!--Search Engine-->
+    <div>
+        <form action="https://www.duckduckgo.com/" method="get">
+            <input type="text" name="q" value="" />
+            <br>
+            <br>
+            <button type="submit">search</button>
+            </form>
+            </div>
+    <!--Friends-->
+    <div class="footer" >
+        <a target="_blank" id="friend" href="http://kiyoshi.tk"> kiyoshi |</a>
+        <a target="_blank" id="friend" href="http://xenaela.ga">| xenaela </a>
+    </div>
+    <div>
+    <a href="http://github.com/akyiata" target="_blank"><img src="images/render_noel.png" alt="waifu" class="render" width="200" height="auto" draggable="false" (dragstart)="false";></a>
+    <a href="http://github.com/akyiata" target="_blank"><img src="images/render_ai.png" alt="waifu2" class="runder" width="225" height="auto" draggable="false" (dragstart)="false";></a>
+    </div>
+    <!--Anim Title-->
+    <script type="text/javascript">
+        function tb8_makeArray(n){
+            this.length = n;
+            return this.length;
+        }
+        tb8_messages = new tb8_makeArray(1);
+        tb8_messages[0] = "Akyiata | TBG";
+        tb8_rptType = 'infinite';
+        tb8_rptNbr = 5;
+        tb8_speed = 100;
+        tb8_delay = 1500;
+        var tb8_counter=1;
+        var tb8_currMsg=0;
+        var tb8_texst ="";
+        var tb8_i=0;
+        var tb8_TID = null;
+        function tb8_pisi(){
+            tb8_texst = tb8_texst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+            document.title = tb8_texst;
+            tb8_sp=tb8_speed;
+            tb8_i++;
+            if (tb8_i==tb8_messages[tb8_currMsg].length){
+                tb8_currMsg++; tb8_i=0; tb8_texst="";tb8_sp=tb8_delay;
+            }
+            if (tb8_currMsg == tb8_messages.length){
+                if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
+                    clearTimeout(tb8_TID);
+                    return;
+                }
+                tb8_counter++;
+                tb8_currMsg = 0;
+            }
+            tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+        }
+        tb8_pisi()</script>
+</body>
+</html>

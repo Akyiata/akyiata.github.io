@@ -1,143 +1,43 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <link href="stylesheet.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/gif" href="images/favi.gif"/>
+    <title>Seizorio</title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
+
 <body>
-</div>
-<div id="page-wrapper">
-    <img src="images/AkySei.png" alt="Akyiata&Seizorio" id="profile" draggable="false" (dragstart)="false";>
-    <div id="title">
-        <p draggable="false" (dragstart)="false";><b>Seizorio | Akyiata</b> » <small><b>TBG</b></small></p>
+    <div class="fullscreen-bg">
+        <video playsinline autoplay muted loop class="fullscreen-bg__video">
+            <source src="assets/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
-</div>
-<div id="btn">
-    <div id='top'></div>
-    <div id='middle'></div>
-    <div id='bottom'></div>
-</div>
-<div id="box">
-    <div id="items">
-        <a href="a/index.html" target="_blank" style="text-decoration:none">
-            <div class="item">Akyiata</div>
-        </a>
-        <a href="s/index.html" target="_blank" style="text-decoration:none">
-            <div class="item">Seizorio</div>
-        </a>
-        <a href="http://xenaela.ga" target="_blank">
-            <div class="item">Xenaela</div>
-        </a>
-        <a href="http://kiyoshi.tk" target="_blank">
-            <div class="item">Kiyoshi</div>
-        </a>
-        <div class="item">Maga</div>
-        <a href="/crew" target="_blank">
-            <div class="item">Crew | Blankz</div>
-        </a>
-        <a href="/b/index.html" target="_blank">
-            <div class="item">Blog</div>
-        </a>
-        <a href="http://github.com/akyiata" target="_blank">
-            <div class="item" id="grad">Github</div>
-        </a>
-
+    <div class="header">
+        <h1 class="animated pulse infinite" style="color: red">Seizorio</h1>
     </div>
-</div>
-<div class="footer" >
-    <a target="_blank" id="friend" href="http://kiyoshi.tk">
-        kiyoshi |
-    </a>
-    <a target="_blank" id="friend" href="http://xenaela.ga">
-        | xenaela
-    </a>
-</div>
-<div>
-    <img id="loliheaven" class="render" width="225" height="auto" draggable="false" (dragstart)="false";>
-</div>
-<!--Javascript-->
-<script type="text/javascript">
-    var sidebarBox = document.querySelector('#box'),
-        sidebarBtn = document.querySelector('#btn'),
-        pageWrapper = document.querySelector('#page-wrapper');
+    <div class="content">
+        <p>
+            <em>"no pain no gain."<br/>- Seizorio</em>
+        </p>
+        <a href="http://akyiata.tk" target="_blank" class="btn">
+            AKYIATA
+        </a>
+        <a href="https://github.com/akyiata" target="_blank" class="btn">
+            GITHUB
+        </a>
+        <a href="https://discordapp.com/users/444625196272582686" target="_blank" class="btn">
+            DISCORD
+        </a>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79153257-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-79153257-1');
+    </script>
 
-    sidebarBtn.addEventListener('click', function (event) {
-        sidebarBtn.classList.toggle('active');
-        sidebarBox.classList.toggle('active');
-    });
-
-    pageWrapper.addEventListener('click', function (event) {
-
-        if (sidebarBox.classList.contains('active')) {
-            sidebarBtn.classList.remove('active');
-            sidebarBox.classList.remove('active');
-        }
-    });
-
-    window.addEventListener('keydown', function (event) {
-
-        if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
-            sidebarBtn.classList.remove('active');
-            sidebarBox.classList.remove('active');
-        }
-    });
-</script>
-<!--Anim Title-->
-<script type="text/javascript">
-    type="text/javascript">
-        function tb8_makeArray(n){
-            this.length = n;
-            return this.length;
-        }
-    tb8_messages = new tb8_makeArray(1);
-    tb8_messages[0] = "FTS | Fuck everyone";
-    tb8_rptType = 'infinite';
-    tb8_rptNbr = 5;
-    tb8_speed = 100;
-    tb8_delay = 1500;
-    var tb8_counter=1;
-    var tb8_currMsg=0;
-    var tb8_texst ="";
-    var tb8_i=0;
-    var tb8_TID = null;
-    function tb8_pisi(){
-        tb8_texst = tb8_texst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
-        document.title = tb8_texst;
-        tb8_sp=tb8_speed;
-        tb8_i++;
-        if (tb8_i==tb8_messages[tb8_currMsg].length){
-            tb8_currMsg++; tb8_i=0; tb8_texst="";tb8_sp=tb8_delay;
-        }
-        if (tb8_currMsg == tb8_messages.length){
-            if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
-                clearTimeout(tb8_TID);
-                return;
-            }
-            tb8_counter++;
-            tb8_currMsg = 0;
-        }
-        tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
-    }
-    tb8_pisi();
-</script>
-<!--Image Switcher-->
-<script>
-    var images = [
-        'images/waifu/a.png',
-        'images/waifu/b.png',
-        'images/waifu/c.png',
-        'images/waifu/d.png',
-        'images/waifu/e.png',
-        'images/waifu/f.png',
-        'images/waifu/g.png',
-        'images/waifu/h.png',
-        'images/waifu/i.png',
-        'images/waifu/j.png',
-    ]
-    var which = Math.floor(Math.random() * images.length);
-    var img = document.getElementById('loliheaven');
-    img.src = images[which];
-    img.title = images[which];
-</script>
 </body>
 </html>

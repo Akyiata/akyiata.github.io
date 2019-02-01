@@ -1,4 +1,4 @@
-# akyiata.github.io -> Akyiata.tk
+# akyiata.github.io -> Satanax.tk
 Site created by Akyiata
 
 You want to use this site? No Problem just Download or fork my project and you are good to go :)

@@ -1,45 +1,49 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-    <title>Seizorio</title>
-    <link rel="stylesheet" href="css/app.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-</head>
 
-<body>
-    <div class="fullscreen-bg">
-        <video playsinline autoplay muted loop poster="assets/bg.gif" class="fullscreen-bg__video">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="header">
-        <h1 class="animated pulse infinite" style="color: red">Seizorio</h1>
-    </div>
-    <div class="content">
-        <p>
-            <em>"Just KillYourSelf!."<br/>- Seizorio</em>
-        </p>
-        <a href="http://akyiata.tk" target="_blank" class="btn">
-            AKYIATA!
-        </a>
-        <a href="https://github.com/akyiata" target="_blank" class="btn">
-            GITHUB!
-        </a>
-        <a href="https://discordapp.com/users/444625196272582686" target="_blank" class="btn">
-            DISCORD!
-        </a>
-	<a href="http://skidsense.ga" target="_blank" class="btn">
-	    SKIDSENSE!
-	</a>
-    </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79153257-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-79153257-1');
-    </script>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
 
+<script src="../code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="icon" href="favicon.ico"/>
+<script src="function.js"></script>
+<div id="mid">
+<p>Nyx</p>
+<a onclick="discord()" target="_blank" href="https://discordapp.com/users/444625196272582686">discord</a> -
+<a onclick="forum()" target="_blank" href="https://skidsense.boards.net">forum</a></div>
+<font face="verdana">
+   <div id="qwertz"><font color="red">[console_<]
+   </font> welcome to SX-UI<br>
+      <font color="red">[console_<]
+   </font> current time
+      <span id="doc_time">date_data</span>
+   </div>
+   <div id="qwertz2">
+   </div>
 </body>
+<script type="text/javascript">
+      function clock() {
+      var d = new Date();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
+      
+      
+      if (hours <= 9) hours = "0" + hours;
+      if (minutes <= 9) minutes = "0" + minutes;
+      if (seconds <= 9) seconds = "0" + seconds;
+      
+      date_time = hours + ":" + minutes + ":" + seconds;
+      if (document.layers) {
+       document.layers.doc_time.document.write(date_time);
+       document.layers.doc_time.document.close();
+      }
+      else document.getElementById("doc_time").innerHTML = date_time;
+       setTimeout("clock()", 1000);
+      }
+   </script>
+   <script type="text/javascript">
+      clock();
+   </script>
+
 </html>

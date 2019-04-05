@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nyxer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://satanax.tk
+  * I am nyxer (https://keybase.io/nyxer) on keybase.
+  * I have a public key ASD2Zc9SVdpeKraxkM2DsR8uuylDXud-FqKngkb8S_rtmwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120048954b8d2a03af468a333f32d10942a4b0c2a88eb33075d9d3326983ef7557a0a",
+      "host": "keybase.io",
+      "kid": "0120f665cf5255da5e2ab6b190cd83b11f2ebb29435ee77e16a2a78246fc4bfaed9b0a",
+      "uid": "c55254d252bf574b0b689d0e17579419",
+      "username": "nyxer"
+    },
+    "merkle_root": {
+      "ctime": 1554451292,
+      "hash": "916029285e268c5000f164f3b9d10d6f87051c459df279f784cdd3b37367cb5d1e811c1c6a44226a650a25557fb904c82568f66c8ee0263692cf6b84a21a4e20",
+      "hash_meta": "11d0cd980f272a52d6604316f22ac5e121f7461c48c346deba259d18b27b102c",
+      "seqno": 5101187
+    },
+    "service": {
+      "entropy": "n59t7KGbAxTKHTuEuReMqRxa",
+      "hostname": "satanax.tk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1554451303,
+  "expire_in": 504576000,
+  "prev": "815afb5005b14400437dca20a3d632b194c04a2a13475453b889d34832d89a42",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9mXPUlXaXiq2sZDNg7EfLrspQ17nfhaip4JG/Ev67ZsKp3BheWxvYWTESpcCE8QggVr7UAWxRABDfcogo9YysZTASioTR1RTuInTSDLYmkLEIM9tC6D9bGPr0AxnmKWIvbUWO9nqAKZtGgDKLd3mtXSDAgHCo3NpZ8RAq0xFdkrA7frakl8Q851Y+7KH4wouZChdOtXkhbeLTFeVJYkg+X1uGGFt7f1eTtpnVRSnTPbsSu+gwjxXREAFDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAkf1PXnMdnIdWidsV7f/yphjBSNLKS2BJbB6FV4ZWBbo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nyxer
+
+==================================================================

@@ -23,6 +23,7 @@ p{
 	font-size: 10px;
 	margin-right: auto;
   	text-align: left;
+
 }
 #qwertz2{
 	color: white;
@@ -35,25 +36,29 @@ body{
 	background-color: black;
 	text-align: center;
 	overflow:-moz-scrollbars-vertical;
-	overflow-x:hidden; 
-	overflow:-moz-scrollbars-vertical; 
+	overflow-x:hidden;
+	overflow:-moz-scrollbars-vertical;
 	overflow-y:hidden;
-	}	
+	}
 a{
     text-align: center;
+	transition: 1s;
 	font-size: 12px;
 	text-align: center;	
 	color: white;
 	text-shadow: 0px 0px 3px gray;
 	text-decoration: none;
 	letter-spacing: 1px;
-font-family: 'Comfortaa', cursive;
+	font-family: 'Comfortaa', cursive;
 	-webkit-transition: 1s;
 }
 a:hover{
-	color: red;
+	color: rebeccapurple;
 	text-shadow: 1px 1px 2px black;
 	-webkit-transition: 1s;
+	transition: 1s;
+	letter-spacing: 2px;
+	font-size: 16px;
 }
 #mid{               
 	position: absolute;
@@ -66,6 +71,7 @@ a:hover{
 	-o-transform: translate(-50%, -50%);
 }
 
-* { box-sizing: border-box;
-cursor: default;
+* {
+	box-sizing: border-box;
+	cursor: default;
 }

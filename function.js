@@ -16,7 +16,7 @@ function discord() {
 checkConsole();
 }
 function keybase() {
-	document.getElementById('qwertz2').innerHTML += "<font face=\"verdana\"><font color=\"rebeccapurple\">SX@UI~#: </font>discord loaded</font><br>";
+	document.getElementById('qwertz2').innerHTML += "<font face=\"verdana\"><font color=\"rebeccapurple\">SX@UI~#: </font>keybase loaded</font><br>";
     i += 1;
     checkConsole();
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rakkas');
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 #container {
 	top: 50%;
@@ -13,9 +13,9 @@
 p{
 	color: white;
 	text-shadow: 0px 0px 3px black;
-	letter-spacing: 2px;
-	font-family: 'Rakkas', cursive;
-	font-size: 36px;
+	letter-spacing: 8px;
+	font-family: 'East Sea Dokdo', cursive;
+	font-size: 60px;
 }
 #qwertz{
 	color: white;

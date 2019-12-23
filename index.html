@@ -1,92 +1,61 @@
-
-<html>
-
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
-
-<script src="../code.jquery.com/jquery-3.3.1.js"></script>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link rel="icon" href="favicon.ico"/>
-<script src="function.js"></script>
-
-<div id="mid">
-<p><font color="rebeccapurple">Nyx</font></p>
-<a onclick="discord()" target="_blank" href="https://discordapp.com/users/444625196272582686">discord</a> -
-<a onclick="keybase()" target="_blank" href="https://keybase.io/nyxer">keybase</a> -
-<a onclick="forum()" target="_blank" href="https://skidsense.boards.net">forum</a> -
-<a onclick="storage()" target="_blank" href="https://mega.nz/#F!vhx2RaxC!tqq03N9BWLHna2GtAHigKA">storage</a> -
-<a onclick="gba()" target="_blank" href="gba/index.html">gameboy</a> -
+<!DOCTYPE html>
+<link href="assets/plugins/sweet-alert/sweetalert2.min.html" rel="stylesheet" type="text/css" />	
+        <link href="assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.html" rel="stylesheet" />
+        <link href="assets/plugins/multiselect/css/multi-select.html"  rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/select2/css/select2.min.html" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.html" rel="stylesheet" />
+        <link href="assets/plugins/switchery/switchery.min.html" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/bootstrap-timepicker.min.html" rel="stylesheet">
+        <link href="assets/plugins/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.html" rel="stylesheet">
+        <link href="assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.html" rel="stylesheet">
+        <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.html" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.html" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.html" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.html" rel="stylesheet" type="text/css" />
+		<script src="assets/js/modernizr.min.html"></script>
+<head>
+	<div class="divide"></div>
+<meta property="og:type" content="EdgeClub.ml">
+<meta property="og:color" content="0xff2fb6">
+<meta property="og:title" content="EdgeClub" />
+<meta property="og:url" content="https://EdgeClub.ml/" />
+<meta charset="UTF-8">
+<script src="Title.js"></script>
+	<title>EdgeClub</title>
+	<script src="jquery.html"></script>
+	<script src="js/jquery.html">
+	</script><script src="js/marquee.html">
+		</script><script src="js/main.html">
+			</script><script language="JavaScript">
+		var space = " ";
+		var speed = "150";
+		var pos = 0;
+		var msg = "  -->EdgeClub<--  ";
+		function Scroll()
+		{
+		document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+		pos++;
+		if (pos > msg.length) pos = 0;
+		window.setTimeout("Scroll()", speed);
+		}
+		Scroll();
+	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/pstyle.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<body><div class="contain">
+	<h1 class="font-effect-anaglyph">EdgeClub</h1>
+	    <a class="waves-effect waves-light btn grey darken-4" a="" target="_blank" href="https://kronis.ch"></i>kronis<a></a>
+		<a class="waves-effect waves-light btn grey darken-4" a="" target="_blank" href="https://discord.gg/q5C2qD"></i>discord<a>
+		<a class="waves-effect waves-light btn grey darken-4" a="" target="_blank" href="https://begone.ml"></i>begone<a>
+		<br></br>
+	<div class="divide"></div>
+	<hr>
 </div>
-<font face="verdana">
-   <div id="qwertz"><font color="rebeccapurple">SX@ADMIN~#:
-   </font> welcome to SX-UI<br>
-      <font color="rebeccapurple">SX@UI~#:
-   </font> current time
-      <span id="doc_time">date_data</span>
-   </div>
-   <div id="qwertz2">
-   </div>
-</font>
-
 </body>
-<script type="text/javascript">
-      function clock() {
-      var d = new Date();
-      var hours = d.getHours();
-      var minutes = d.getMinutes();
-      var seconds = d.getSeconds();
-      
-      
-      if (hours <= 9) hours = "0" + hours;
-      if (minutes <= 9) minutes = "0" + minutes;
-      if (seconds <= 9) seconds = "0" + seconds;
-      
-      date_time = hours + ":" + minutes + ":" + seconds;
-      if (document.layers) {
-       document.layers.doc_time.document.write(date_time);
-       document.layers.doc_time.document.close();
-      }
-      else document.getElementById("doc_time").innerHTML = date_time;
-       setTimeout("clock()", 1000);
-      }
-
-   </script>
-   <script type="text/javascript">
-      clock();
-   </script>
-       <script type="text/javascript">
-         function tb8_makeArray(n){
-             this.length = n;
-             return this.length;
-         }
-         tb8_messages = new tb8_makeArray(1);
-         tb8_messages[0] = "SX-UI | Nyx ";
-         tb8_rptType = 'infinite';
-         tb8_rptNbr = 5;
-         tb8_speed = 100;
-         tb8_delay = 1500;
-         var tb8_counter=1;
-         var tb8_currMsg=0;
-         var tb8_text ="";
-         var tb8_i=0;
-         var tb8_TID = null;
-         function tb8_pisi(){
-             tb8_text = tb8_text + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
-             document.title = tb8_text;
-             tb8_sp=tb8_speed;
-             tb8_i++;
-             if (tb8_i==tb8_messages[tb8_currMsg].length){
-                 tb8_currMsg++; tb8_i=0; tb8_text="";tb8_sp=tb8_delay;
-             }
-             if (tb8_currMsg == tb8_messages.length){
-                 if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
-                     clearTimeout(tb8_TID);
-                     return;
-                 }
-                 tb8_counter++;
-                 tb8_currMsg = 0;
-             }
-             tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
-         }
-         tb8_pisi()</script>
-
 </html>
+<script src="assets/js/disabledev.js"></script>
+<!--ripofsenselessold-->
